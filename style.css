@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.outer{
+    /* border:2px solid black; */
+    min-height: 100vh;
+    width: 100%;
+    /* box-sizing: border-box; */
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    /* overflow: hidden; */
+}
+
+.inner{
+    display:flex;
+    /* margin-left: 230px; */
+    /* margin-top: 120px; */
+}
+
+.box1,.box2,.box3{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* border: 2px solid #1c1938 ; */
+}
+
+.box1{
+    background-color: #e28525;
+    color:#f6eddf;
+}
+
+button{
+    background-color:#f6eddf ;
+    border: 2px solid #f6eddf;
+    /* color:#e28525; */
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.box1 button:hover{
+    cursor: pointer;
+    color:#f6eddf !important;
+    background-color:#e28525 ;
+}
+
+.box2{
+   background-color:#016972;
+   color:#f6eddf;
+}
+.box2 button:hover{
+    cursor: pointer;
+    color:#f6eddf !important;
+    background-color:#016972 ;
+}
+
+.box3{
+    background-color: #00403f;
+    color: #f6eddf;;
+}
+
+.box3 button:hover{
+    cursor: pointer;
+    color:#f6eddf !important;
+    background-color:#00403f ;
+}
+.text{
+    margin:30px 30px;
+}
+
+.text p{
+    font-size: 17px;
+}
+
+@media only screen  and (max-width:900px){
+    .inner{
+        display: flex;
+        flex-direction: column;
+    }
+}
